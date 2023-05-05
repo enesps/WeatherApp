@@ -1,0 +1,6 @@
+
+FROM openjdk:11
+COPY . /app
+WORKDIR /src/main/java/com/example/weatherapi/
+RUN javac MainActivity.kt
+CMD ["java", "Main"]
